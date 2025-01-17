@@ -36,7 +36,7 @@ nav a{
     justify-content: space-between;
 }
 
-.innerNavContainer, .nowPlayingContainer, .heroContainer{
+.innerNavContainer, .nowPlayingContainer, .heroContainer, .tmrScheduleContainer{
     padding: 0 5%;
     max-width: 1620px;
     margin: 0 auto;
@@ -87,11 +87,6 @@ h1, h2{
     width: 20%
 }
 
-.tmrScheduleContainer{
-    padding: 0 5%;
-    max-width: 1620px;
-}
-
 /* Scroll bar styling */
 ::-webkit-scrollbar {
     width: 10px;
@@ -125,5 +120,8 @@ footer{
     }
     .nowPlayingOneContainer, .nowPlayingTwoThreeContainer{
         width: 100%
+    }
+    .tmrScheduleContainer{
+        margin: 0;
     }
 }
