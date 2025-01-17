@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Gogglebox </title>
+</head>
+<body>
+    <nav> 
+        <div class="innerNavContainer">
+            <img src="assets/2308_gogglebox_logo.png" alt="Gogglebox Logo"/>
+            <a href=""> Sign In </a>
+        </div>
+        
+    </nav>
+
+    <picture class="heroContainer">
+        <source srcset="assets/2308_mobile_hero.jpg"  class="heroImg" media="(max-width: 580px)">
+        <img src="assets/2308_desktop_hero.jpg" class="heroImg" alt="What We Do In the Shadows Banner"/>
+    </picture>
+    
+    <section class="nowPlayingContainer">
+        <h1> Now Playing </h1>
+        <div class="nowPlayingImgContainer">
+            <div class="nowPlayingOneContainer">
+                <img src="assets/2308_01_now_playing.jpg" id="firstNowPlayingImg" alt="Only Murders in the Building Poster"/>
+            </div>
+            <div class="nowPlayingTwoThreeContainer">
+                <img src="assets/2308_02_now_playing.jpg" alt="Yellow Jacket Poster"/>
+                <img src="assets/2308_03_now_playing.jpg" alt="Stranger Things Poster"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="tmrScheduleContainer">
+        <h2> Tomorrow's Schedule </h2>
+        <div class="scrollContainer">
+            <div class="tmrShowContainer">
+                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p> @ Gogglebox 2023 All Rights Reserved </p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
