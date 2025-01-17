@@ -56,11 +56,21 @@ h1, h2{
 .nowPlayingImgContainer{
     display: flex;
     gap: 20px;
+    justify-content: space-between;
 }
 
 .nowPlayingContainer img{
     width: 100%; 
+}
 
+.nowPlayingOneContainer{
+    width: 35%;
+}
+
+.nowPlayingOneContainer img{
+    object-fit: fill; /* stretches the img to fit the container */
+    width: 100%;
+    height: 100%;
 }
 
 .nowPlayingTwoThreeContainer{
@@ -68,6 +78,7 @@ h1, h2{
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
+    width: 65%;
 }
 
 /* Tomorrow's Schedule Styling */
