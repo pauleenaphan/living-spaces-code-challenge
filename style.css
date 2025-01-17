@@ -11,9 +11,6 @@ img{
 body{
     background-color: #2E083D;
     color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
 }
 
 /* Nav Styling */
@@ -21,7 +18,8 @@ nav{
     background-color: #000;
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    padding: 10px 8%;
+
 }
 
 nav a{
@@ -29,17 +27,21 @@ nav a{
     text-decoration: none;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 8%;
+    margin: 50px auto;
+    max-width: 1680px;
+}
+
 .innerNavContainer{
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
-}
-
-.innerNavContainer, .nowPlayingContainer, .heroContainer, .tmrScheduleContainer{
-    padding: 0 5%;
-    max-width: 1620px;
-    margin: 0 auto;
+    max-width: 1680px;
 }
 
 .heroImg{
@@ -53,38 +55,39 @@ h1, h2{
 /* Now Playing Styling */
 .nowPlayingImgContainer{
     display: flex;
-    flex-direction: row;
-    gap: 30px;
+    gap: 20px;
 }
 
 .nowPlayingContainer img{
-    width: 100%;
-}
+    width: 100%; 
 
-.nowPlayingOneContainer{
-    width: 40%
 }
 
 .nowPlayingTwoThreeContainer{
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    width: 69%;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 /* Tomorrow's Schedule Styling */
+.tmrScheduleContainer {
+    max-width: 100%;
+    overflow: hidden;
+}
+
 .scrollContainer{
     overflow-x: scroll;
 }
 
 .tmrShowContainer{
     display: flex;
-    gap: 30px;
+    gap: 20px;
     padding-bottom: 60px;
 }
 
 .tmrShowContainer img{
-    width: 20%
+    width: 20%;
 }
 
 /* Scroll bar styling */
@@ -121,7 +124,7 @@ footer{
     .nowPlayingOneContainer, .nowPlayingTwoThreeContainer{
         width: 100%
     }
-    .tmrScheduleContainer{
-        margin: 0;
+    .tmrShowContainer img{
+        width: 50%;
     }
 }
