@@ -30,6 +30,6 @@ $.ajax({
 function loadTmrShows(shows){
     // Adds each tmr shows img to container
     for(let i = 0; i < shows.length; i++){
-        $(".tmrShowContainer").append(`<img src=${shows[i].image.original} alt=${shows[i].name}>  </img>`)
+        $(".tmrShowContainer").append(`<img src=${shows[i].image.medium} alt="${shows[i].name}">  </img>`)
     }
 }
